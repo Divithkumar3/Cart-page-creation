@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #090909;
+        }
+        
+        .product-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            width: 100%;
+        }
+        
+        .product-card {
+            background-color: #f0e4e4;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            padding: 20px;
+            transition: transform 1s;
+        }
+        
+        .product-card img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+        
+        .product-card h2 {
+            font-size: 18px;
+            margin: 0 0 10px;
+        }
+        
+        .product-card p {
+            font-size: 16px;
+            color: #333;
+            margin: 0 0 15px;
+        }
+        
+        .add-to-cart {
+            padding: 10px 20px;
+            background-color: #e85a0e;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s;
+        }
+        
+        .add-to-cart:hover {
+            background-color: #218838;
+        }
+        
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="product-list">
+        <div class="product-card">
+            <img src="/images/imag1.jpeg" alt="Product 1">
+            <h2>1st Item</h2>
+            <p>Rs.100</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/imag2.jpeg" alt="Product 2">
+            <h2>2nd Item</h2>
+            <p>Rs.200</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/imag3.jpeg" alt="Product 3">
+            <h2>3rd Item</h2>
+            <p>Rs.300</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="/images/imag4.webp" alt="Product 4">
+            <h2>4th Item</h2>
+            <p>Rs.400</p>
+            <button class="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+</body>
+</html>
